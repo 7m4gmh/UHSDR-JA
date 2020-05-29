@@ -202,6 +202,27 @@ static const BandInfo* bandInfo_region3[MAX_BAND_NUM] =
         &bi_gen_all,
 };
 
+// Bandplans for Japan
+static const BandInfo* bandInfo_region3_ja[MAX_BAND_NUM] =
+{
+        &bi_80m_r3,
+        &bi_40m_r2_3,
+        &bi_30m_all,
+        &bi_20m_all,
+        &bi_17m_all,
+        &bi_15m_all,
+        &bi_12m_all,
+        &bi_10m_all,
+        &bi_6m_r2_3,
+        &bi_2m_r2_3,
+        &bi_70cm_r2_3,
+        &bi_23cm_all,
+        &bi_2200m_all,
+        &bi_630m_all,
+        &bi_160m_all,
+        &bi_gen_all,
+};
+
 // finally we list all of them in a table and give them names for the menu
 const BandInfoSet bandInfos[] =
 {
@@ -209,6 +230,7 @@ const BandInfoSet bandInfos[] =
         { bandInfo_region1,  "Region 1" },
         { bandInfo_region2,  "Region 2" },
         { bandInfo_region3,  "Region 3" },
+		{ bandInfo_region3_ja, "Japan" },
 };
 
 const int BAND_INFO_SET_NUM = sizeof(bandInfos)/sizeof(BandInfoSet);
